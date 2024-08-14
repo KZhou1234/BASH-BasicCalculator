@@ -34,7 +34,8 @@ Aftr optimization, unlimited inputs can be taken from user and prform correct ca
 
 * When the user has multiple inputs, the script `calculator.sh` can perform calculations.
     <div align="center">
-      <img width="743" alt="image" src="https://github.com/user-attachments/assets/078344bc-e0c5-4556-8b42-8e92e4994768">
+      <img width="633" alt="image" src="https://github.com/user-attachments/assets/1c701c36-4951-45ab-9be2-c70380ff980f">
+
     </div>
 ## Conclusion
 This exercise helped me practice using loops, conditional statements, and mathematical calculations. 
