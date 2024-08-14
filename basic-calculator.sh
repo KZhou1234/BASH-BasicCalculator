@@ -11,14 +11,13 @@ read operator
 #Use conditionals ('if`, `elif`, `else') to perform the chosen operation.
 if [ "$operator" = "+" ]
 then
-  result=$((num1 + num2))
+  result=$(echo "$num1 + $num2" | bc)
 elif [ "$operator" = "-" ]
 then
-  result=$((num1 - num2))
+  result=$(echo "$num1 - $num2" | bc)
 elif [ "$operator" = "*" ]
 then
-  result=$((num1 * num2))
-
+  result=$(echo "$num1 * $num2" | bc)
 elif [ "$operator" = "/" ]
 then
   if [ $num2 -eq 0 ] #Handle division by zero with an appropriate error message.
@@ -26,7 +25,7 @@ then
     echo "The divisor can not be zero!"
     exit 1
   else
-  result=$((num1 / num2))
+    result=$(echo "scale=3; $num1 / $num2" | bc)
   fi
 else
   echo "Please select a valid operator."
